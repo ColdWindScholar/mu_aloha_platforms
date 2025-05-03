@@ -6,6 +6,8 @@
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Application/QcomChargerApp/QcomChargerApp.inf
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/AdcDxe/AdcDxe.inf
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ASN1X509Dxe/ASN1X509Dxe.inf
+
+    
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.inf
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ChargerExDxe/ChargerExDxe.inf
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/ChipInfoDxe/ChipInfoDxe.inf
@@ -16,6 +18,10 @@
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/DDRInfoDxe/DDRInfoDxe.inf
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/FontDxe/FontDxe.inf
+    
+    INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/EnvDxe/EnvDxe.inf
+    INF AndromedaPkg/Driver/RamPartitionDxe/RamPartitionDxe.inf
+    
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/GpiDxe/GpiDxe.inf
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/HALIOMMUDxe/HALIOMMUDxe.inf
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/HashDxe/HashDxe.inf
@@ -51,8 +57,8 @@
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/VcsDxe/VcsDxe.inf
     INF KonaPkg/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/XhciPciEmulationDxe/XhciPciEmulationDxe.inf
+    INF QcomPkg/PatchedBinaries/UFSDxe.inf
     INF QcomPkg/PatchedBinaries/UsbConfigDxe.inf
-    INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/UFSDxe.inf
     INF AndromedaPkg/Driver/GpioButtons/GpioButtons.inf
     INF AndromedaPkg/Driver/SimpleFbDxe/SimpleFbDxe.inf
 
@@ -197,6 +203,17 @@
     FILE FREEFORM = 6F2D4884-D8A0-11E9-AF7A-D77B1FE990EC {
         SECTION UI = "Panel_nt36860_wqhd_dsc_vid.xml"
         SECTION RAW = KonaPkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_nt36860_wqhd_dsc_vid.xml
+    }
+    
+    FILE FREEFORM = 1CA359C6-20A3-4152-9D8D-64606DC1C0D1 {
+        SECTION UI = "Panel_spinel_boe_nt36532_dsc_3k_video.xml"
+        SECTION RAW = KonaPkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_spinel_boe_nt36532_dsc_3k_video.xml
+    }
+
+
+    FILE FREEFORM = FA9B78C3-7F80-43CB-93A9-34FE0415DF93 {
+        SECTION UI = "Panel_spinel_tianma_nt36532_dsc_3k_video.xml"
+        SECTION RAW = KonaPkg/Device/$(TARGET_DEVICE)/Binaries/RawFiles/Panel_spinel_tianma_nt36532_dsc_3k_video.xml
     }
 
     
